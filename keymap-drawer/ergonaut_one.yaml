@@ -1,6 +1,7 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
   default:
-  - {t: ']', h: Gui}
+  - {t: ESCAPE, h: '`'}
   - Q
   - W
   - E
@@ -12,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - {t: '`', h: Ctrl}
+  - Alt
   - A
   - S
   - D
@@ -24,7 +25,7 @@ layers:
   - L
   - ;
   - {t: '''', h: Ctrl}
-  - {t: '-', h: Alt}
+  - Ctrl
   - Z
   - X
   - C
@@ -36,95 +37,95 @@ layers:
   - .
   - /
   - {t: \, h: Alt}
-  - {t: ↹, h: raise}
+  - {t: LEFT WIN, h: raise}
   - {t: ␣, h: Shift}
   - {t: ⏎, h: lower}
-  - {t: Esc, h: lower}
-  - {t: ⌫, h: Shift}
+  - {t: ↹, h: lower}
+  - BACKSPACE
   - {t: ⌦, h: raise}
-  lower:
-  - {t: F1, h: Gui}
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: +, h: Ctrl}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '-', h: Ctrl}
-  - {t: '=', h: Alt}
+  raise:
+  - Gui
+  - {t: PAGE UP, h: Home}
+  - UP ARROW
+  - {t: PAGE DOWN, h: End}
+  - Insert
+  - ''
   - '1'
   - '2'
   - '3'
+  - KP NUMLOCK
+  - +
+  - '-'
+  - {t: ▽, type: trans}
+  - ←
+  - DOWN ARROW
+  - →
+  - ''
+  - ''
   - '4'
   - '5'
   - '6'
+  - '='
+  - '*'
+  - /
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '7'
   - '8'
   - '9'
   - '0'
-  - Alt
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  raise:
-  - {t: KP NUM, h: Gui}
-  - KP SLASH
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MINUS
-  - Vol Up
-  - Home
-  - Print Scrn
-  - Page Up
-  - SLCK
-  - CLCK
-  - {t: '=', h: Ctrl}
-  - KP MULTIPLY
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
-  - MUTE
-  - ←
-  - ↑
-  - →
-  - Insert
-  - {t: APP, h: Ctrl}
-  - Alt
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
   - KP DOT
-  - Vol Down
-  - End
-  - ↓
-  - Page Down
-  - Pause Break
   - Alt
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  lower:
+  - Gui
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - '!'
+  - {t: Sft+2, h: '&ru_at'}
+  - {t: Sft+3, h: '&ru_number'}
+  - (
+  - )
+  - ']'
+  - {t: ▽, type: trans}
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - {t: Sft+$, h: '&ru_dollar'}
+  - '%'
+  - {t: Sft+6, h: '&ru_carret'}
+  - '['
+  - ']'
+  - {t: '-', h: Ctrl}
+  - {t: ▽, type: trans}
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: Sft+7, h: '&ru_amp'}
+  - '*'
+  - _
+  - '{'
+  - '}'
+  - Alt
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -134,10 +135,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - PRINTSCREEN
+  - VOLUME DOWN
+  - MUTE
+  - VOLUME UP
   - ''
   - ''
   - Boot
@@ -147,27 +148,116 @@ layers:
   - BT 3
   - BT 4
   - BT 5
-  - BT 5
-  - BT 4
-  - BT 3
-  - BT 2
-  - BT 1
-  - BT CLR
-  - Reset
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - ⏮️
+  - PLAY PAUSE
+  - ⏭️
   - ''
   - ''
   - ''
   - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
   - ''
   - {type: held}
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  mouse:
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ↑
+  - ''
+  - '&mkp MB1'
+  - Mouse ↑
+  - '&mkp MB2'
+  - ''
+  - '&pwd'
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Scroll →
+  - ''
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ↓
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  scroll:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Scroll ↑
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Scroll ←
+  - Scroll ↓
+  - Scroll →
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [18, 7, 8]
+  k: {t: mouse, h: toggle}
