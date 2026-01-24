@@ -18,12 +18,12 @@
     physical_layout {
      compatible = "zmk,physical-layout";
      display-name = "Ergonaut One(Dongle)";
-     kscan = <&kscan_none>;
+     kscan = <&kscan0>;
      transform = <&identity_transform>;
      keys = <>;
     };
 };
-&kscan_none {
+&kscan0 {
   compatible = "zmk,kscan-none";
   status = "okay";
 }
