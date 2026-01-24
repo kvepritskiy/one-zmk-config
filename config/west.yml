@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: ergonautkb
       url-base: https://github.com/ergonautkb
-    - name: kvepritskiy
-      url-base: https://github.com/kvepritskiy
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,7 +15,7 @@ manifest:
       remote: ergonautkb
       revision: main
     - name: zmk-dongle-display
-      remote: kvepritskiy
+      remote: englmaxi
       revision: main
       
   self:
