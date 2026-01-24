@@ -4,15 +4,16 @@ manifest:
       url-base: https://github.com/urob
     - name: petejohanson
       url-base: https://github.com/petejohanson
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
+    - name: kvepritskiy
+      url-base: https://github.com/kvepritskiy
   projects:
     - name: zmk
       remote: petejohanson
       revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-dongle-display
-      remote: englmaxi
+      remote: kvepritskiy
       revision: main
+      
   self:
     path: config
