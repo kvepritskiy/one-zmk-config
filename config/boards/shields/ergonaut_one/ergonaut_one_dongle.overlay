@@ -25,7 +25,7 @@
     };
 };
 
-&kscan_none {
+kscan_none: kscan_none {
     compatible = "zmk,kscan-none";
     status = "okay";
 };
