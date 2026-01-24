@@ -24,7 +24,7 @@
     };
 };
 &kscan0 {
-  compatible = "zmk,kscan-none";
+  compatible = "zmk,kscan";
   status = "okay";
 }
 &pro_micro_i2c {   
