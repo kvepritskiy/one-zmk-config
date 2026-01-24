@@ -8,7 +8,7 @@
 
 / {
     chosen {
-        
+        zmk,kscan = &kscan_0;
         zephyr,display = &oled;
     };
     zmk_studio {
@@ -18,15 +18,17 @@
     physical_layout {
      compatible = "zmk,physical-layout";
      display-name = "Ergonaut One(Dongle)";
-     kscan = <&kscan0>;
+     kscan = kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
      transform = <&identity_transform>;
      keys = <>;
     };
 };
-&kscan0 {
-  compatible = "zmk,kscan";
-  status = "okay";
-}
+
 &pro_micro_i2c {   
     status = "okay";
 
