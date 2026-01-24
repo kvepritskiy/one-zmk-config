@@ -8,21 +8,26 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan_0;
-        zephyr,display = &oled;
+        zmk,keyboard-name = "Ergonaut One Dongle";
     };
+
+    zmk_studio {
+        compatible = "zmk,studio";
+        status = "okay";
+    };
+
     physical_layout {
-     compatible = "zmk,physical-layout";
-     display-name = "Ergonaut One(Dongle)";
-     kscan = kscan_0 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
+        compatible = "zmk,physical-layout";
+        display-name = "Ergonaut One (dongle)";
+        kscan = <&kscan_none>;
+        transform = <&identity_transform>;
+        keys = <>;
     };
-     transform = <&identity_transform>;
-     keys = <>;
-    };
+};
+
+&kscan_none {
+    compatible = "zmk,kscan-none";
+    status = "okay";
 };
 
 &pro_micro_i2c {   
