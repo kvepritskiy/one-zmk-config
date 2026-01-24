@@ -1,16 +1,19 @@
 manifest:
   remotes:
-    - name: urob
-      url-base: https://github.com/urob
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: ergonautkb
+      url-base: https://github.com/ergonautkb
     - name: kvepritskiy
       url-base: https://github.com/kvepritskiy
   projects:
     - name: zmk
-      remote: petejohanson
-      revision: feat/pointers-move-scroll
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
+    - name: ergonautkb-zmk-module
+      remote: ergonautkb
+      revision: main
     - name: zmk-dongle-display
       remote: kvepritskiy
       revision: main
