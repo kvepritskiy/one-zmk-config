@@ -40,9 +40,9 @@ layers:
   - {t: LEFT WIN, h: raise}
   - {t: ␣, h: Shift}
   - {t: ⏎, h: lower}
-  - {t: ↹, h: lower}
-  - BACKSPACE
-  - {t: ⌦, h: raise}
+  - {t: ↹, h: Ctrl}
+  - {t: BACKSPACE, h: LEFT ALT}
+  - {t: ⌦, h: AC PROPERTIES}
   raise:
   - Gui
   - {t: PAGE UP, h: Home}
@@ -165,7 +165,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Reset
   - {type: held}
   - ''
   - {type: held}
@@ -175,22 +175,22 @@ layers:
   mouse:
   - {t: ▽, type: trans}
   - ''
-  - ''
-  - ''
-  - ''
-  - Scroll ↑
-  - ''
+  - '&mkp MB1'
+  - Mouse ↑
+  - '&mkp MB2'
+  - {t: default, h: toggle}
+  - {t: default, h: toggle}
   - '&mkp MB1'
   - Mouse ↑
   - '&mkp MB2'
   - ''
-  - '&pwd'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
   - ''
-  - ''
-  - Scroll ←
-  - Scroll →
   - ''
   - Mouse ←
   - Mouse ↓
@@ -202,35 +202,30 @@ layers:
   - ''
   - ''
   - ''
-  - Scroll ↓
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ENTER, h: scroll}
+  - {t: ↹, h: scroll}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Back Click
   - Scroll ↑
+  - Forward Click
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Back Click
+  - Scroll ↑
+  - Forward Click
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -238,6 +233,140 @@ layers:
   - Scroll ←
   - Scroll ↓
   - Scroll →
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Scroll ←
+  - Scroll ↓
+  - Scroll →
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&pwd'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  gaming:
+  - ESCAPE
+  - R
+  - Q
+  - W
+  - E
+  - F
+  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - I
+  - A
+  - S
+  - D
+  - G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - X
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - C
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ␣
+  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '7':
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '8':
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '!'
+  - {t: '@', h: '&ru_at'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -261,3 +390,7 @@ layers:
 combos:
 - p: [18, 7, 8]
   k: {t: mouse, h: toggle}
+- p: [17, 4, 3]
+  k: {t: mouse, h: toggle}
+- p: [0, 13, 26]
+  k: {t: gaming, h: toggle}
