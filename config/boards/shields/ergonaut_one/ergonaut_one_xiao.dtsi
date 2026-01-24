@@ -47,6 +47,6 @@
 	};
 };
 
-&xiao_spi { status = "enabled"; };
+&xiao_spi { status = "ok"; };
 &xiao_i2c { status = "disabled"; };
-&xiao_serial { status = "enabled"; };
+&xiao_serial { status = "ok"; };
