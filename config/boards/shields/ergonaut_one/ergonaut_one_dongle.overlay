@@ -11,10 +11,6 @@
         zmk,kscan = &kscan_0;
         zephyr,display = &oled;
     };
-    zmk_studio {
-      compatible = "zmk,studio";
-      status = "okay";
-    };
     physical_layout {
      compatible = "zmk,physical-layout";
      display-name = "Ergonaut One(Dongle)";
