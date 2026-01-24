@@ -36,6 +36,6 @@
     };
 };
 
-&spi3 { status = "disabled"; };
+&spi3 { status = "ok"; };
 &uart0 { status = "ok"; };
 &pwm0 { status = "disabled"; };
