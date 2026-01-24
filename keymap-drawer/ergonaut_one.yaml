@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - {t: '''', h: Ctrl}
+  - '&studio_unlock'
   - Ctrl
   - Z
   - X
