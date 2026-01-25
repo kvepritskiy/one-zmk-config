@@ -21,11 +21,6 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_POINTING=y -DCONFIG_ZMK_STUDIO=y
     artifact-name: ergonaut_one_right_studio
-  - board: nice_nano
-    shield: ergonaut_one_dongle dongle_display
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_POINTING=y -DCONFIG_ZMK_STUDIO=y
-    artifact-name: ergonaut_one_dongle_studio
   - board: xiao_ble
     shield: settings_reset
   
