@@ -131,7 +131,7 @@ layers:
   - {t: ▽, type: trans}
   adjust:
   - Boot
-  - ''
+  - '&studio_unlock'
   - ''
   - ''
   - ''
@@ -140,7 +140,7 @@ layers:
   - MUTE
   - VOLUME UP
   - ''
-  - ''
+  - '&studio_unlock'
   - Boot
   - BT CLR
   - BT 1
