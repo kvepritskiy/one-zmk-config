@@ -20,6 +20,7 @@
         compatible = "zmk,physical-layout";
         display-name = "Ergonaut One (dongle)";
         kscan = <&kscan_none>;
+        transform = <&identity_transform>;
         keys = <>;
     };
     kscan_none: kscan_none {
