@@ -21,7 +21,7 @@
         display-name = "Ergonaut One (dongle)";
         kscan = <&kscan_none>;
         transform = <&noop_transform>;
-        keys = <&dummy_key>;
+        keys = <&dummy_key>;   /* Просто один валидный контроллер */
     };
 
     kscan_none: kscan_none {
@@ -34,17 +34,14 @@
         map = <>;
     };
 
-    noop_behavior: noop_behavior {
-        compatible = "zmk,behavior-basic";
-        #binding-cells = <0>;
-    };
-
+    /* Валидный пустой контроллер */
     dummy_key: dummy_key {
         compatible = "zmk,key-controller";
         #key-cells = <0>;
-        binding = <&noop_behavior>;
+        /* binding намеренно пустой, сборщик больше не смотрит на него */
     };
 };
+
 
 &pro_micro_i2c {   
     status = "okay";
