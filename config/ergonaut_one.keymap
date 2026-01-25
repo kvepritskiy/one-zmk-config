@@ -10,12 +10,12 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 5000 // 600
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 6000 // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 12   // 10
 
 &mmv {
-    acceleration-exponent = <5>;  // 1
-    time-to-max-speed-ms = <98>; // 300
+    acceleration-exponent = <3>;  // 1
+    time-to-max-speed-ms = <150>; // 300
     delay-ms = <0>;
     trigger-period-ms = <8>;      // 16
 };
