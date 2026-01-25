@@ -34,10 +34,15 @@
         map = <>;
     };
 
+    noop_behavior: noop_behavior {
+        compatible = "zmk,behavior-basic";
+        #binding-cells = <0>;
+    };
+
     dummy_key: dummy_key {
         compatible = "zmk,key-controller";
         #key-cells = <0>;
-        binding = <&kp_a>;
+        binding = <&noop_behavior>;
     };
 };
 
