@@ -6,47 +6,34 @@
 
 #include "ergonaut_one_nice.dtsi"
 
+
 / {
     chosen {
         zmk,keyboard-name = "Ergonaut One Dongle";
     };
 
+    /* Включаем поддержку ZMK Studio */
     zmk_studio {
         compatible = "zmk,studio";
         status = "okay";
     };
 
-    physical_layout {
-        compatible = "zmk,physical-layout";
-        display-name = "Ergonaut One (dongle)";
-        kscan = <&kscan_none>;
-        transform = <&noop_transform>;
-        keys = <&dummy_key>;
-    };
+    /* Донгл физического layout не имеет */
+    &physical_layout {
+        status = "disabled";
+    }
 
+    /* kscan_none для безопасного отключения сканирования */
     kscan_none: kscan_none {
         compatible = "zmk,kscan-none";
         status = "okay";
-    };
+    }
 
+    /* пустой transform, если Studio требует node */
     noop_transform: noop_transform {
         compatible = "zmk,physical-layout-transform";
         map = <>;
     };
-
-    /* 👇 вот правильный noop behavior */
-    noop_behavior: noop_behavior {
-        compatible = "zmk,behavior-basic";
-        #binding-cells = <0>;
-    };
-
-    dummy_key: dummy_key {
-        compatible = "zmk,key-controller";
-        #key-cells = <0>;
-        binding = <&noop_behavior>;   /* обязательно */
-    };
-};
-
 
 &pro_micro_i2c {   
     status = "okay";
