@@ -40,7 +40,7 @@
         label = "DUMMY";
         row = <0>;
         col = <0>;
-        binding = <&none>;
+        binding = <&trans>;
     };
 };
 
