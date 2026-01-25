@@ -21,7 +21,7 @@
         display-name = "Ergonaut One (dongle)";
         kscan = <&kscan_none>;
         transform = <&noop_transform>;
-        keys = <>;
+        keys = <&dummy_key>;
     };
 
     kscan_none: kscan_none {
@@ -32,6 +32,13 @@
     noop_transform: noop_transform {
         compatible = "zmk,physical-layout-transform";
         map = <>;
+    };
+
+    dummy_key: dummy_key {
+        compatible = "zmk,physical-key";
+        label = "DUMMY";
+        row = <0>;
+        col = <0>;
     };
 };
 
