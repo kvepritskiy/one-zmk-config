@@ -20,12 +20,18 @@
         compatible = "zmk,physical-layout";
         display-name = "Ergonaut One (dongle)";
         kscan = <&kscan_none>;
-        transform = <&identity_transform>;
+        transform = <&noop_transform>;
         keys = <>;
     };
+
     kscan_none: kscan_none {
         compatible = "zmk,kscan-none";
         status = "okay";
+    };
+
+    noop_transform: noop_transform {
+        compatible = "zmk,physical-layout-transform";
+        map = <>;
     };
 };
 
