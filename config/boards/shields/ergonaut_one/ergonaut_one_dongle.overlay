@@ -35,11 +35,8 @@
     };
 
     dummy_key: dummy_key {
-        compatible = "zmk,physical-key";
+        compatible = "zmk,key-controller";
         #key-cells = <0>;
-        label = "DUMMY";
-        row = <0>;
-        col = <0>;
         binding = <&trans>;
     };
 };
