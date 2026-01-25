@@ -1,0 +1,6 @@
+/ {
+    chosen {
+        zmk,split-role = "peripheral";
+        zmk,split-side = "right";
+    };
+};
