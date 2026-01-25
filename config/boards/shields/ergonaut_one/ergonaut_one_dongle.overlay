@@ -9,27 +9,24 @@
 / {
     chosen {
         zmk,keyboard-name = "Ergonaut One Dongle";
+         zephyr,display = &oled;
     };
 
-    /* Включаем поддержку ZMK Studio */
     zmk_studio {
         compatible = "zmk,studio";
         status = "okay";
     };
 
-    /* Пустой layout для донгла, сразу disabled */
     dongle_layout: physical_layout {
         compatible = "zmk,physical-layout";
         status = "disabled";
     };
 
-    /* Без сканирования */
     kscan_none: kscan_none {
         compatible = "zmk,kscan-none";
         status = "okay";
     };
 
-    /* Пустой transform, если Studio требует node */
     noop_transform: noop_transform {
         compatible = "zmk,physical-layout-transform";
         map = <>;
