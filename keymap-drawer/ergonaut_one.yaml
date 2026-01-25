@@ -40,9 +40,9 @@ layers:
   - {t: LEFT WIN, h: raise}
   - {t: ␣, h: Shift}
   - {t: ⏎, h: lower}
-  - {t: ↹, h: Ctrl}
+  - {t: ↹, h: lower}
   - {t: BACKSPACE, h: LEFT ALT}
-  - {t: ⌦, h: AC PROPERTIES}
+  - {t: ⌦, h: raise}
   raise:
   - Gui
   - {t: PAGE UP, h: Home}
