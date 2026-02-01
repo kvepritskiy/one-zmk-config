@@ -10,10 +10,17 @@
     chosen {
         zmk,physical-layout = &ergonaut_physical_layout;
     };
+    kscan_dummy: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        status = "disabled";
+    };
 
     ergonaut_physical_layout: physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Ergonaut";
+
+        kscan = <&kscan_dummy>;
+        transform = <&default_transfom>;
 
         keys = <
             0    0   18 18
