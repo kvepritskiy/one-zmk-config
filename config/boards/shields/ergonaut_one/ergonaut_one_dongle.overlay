@@ -8,27 +8,54 @@
 
 / {
     chosen {
-        zmk,keyboard-name = "Ergonaut One Dongle";
-         zephyr,display = &oled;
+        zmk,physical-layout = &ergonaut_physical_layout;
     };
 
-    zmk_studio {
-        compatible = "zmk,studio";
-        status = "okay";
-    };
-
-    dongle_layout: physical_layout {
+    ergonaut_physical_layout: physical_layout {
         compatible = "zmk,physical-layout";
-        keys = <
-            0    0    0    0    0    0
-            0    0    0    0    0    0
-            0    0    0    0    0    0
-                 0    0    
 
-            0    0    0    0    0    0
-            0    0    0    0    0    0
-            0    0    0    0    0    0    
-                 0    0
+        keys = <
+            0    0   18 18
+            20   0   18 18
+            40   0   18 18
+            60   0   18 18
+            80   0   18 18
+
+            0    20  18 18
+            20   20  18 18
+            40   20  18 18
+            60   20  18 18
+            80   20  18 18
+
+            0    40  18 18
+            20   40  18 18
+            40   40  18 18
+            60   40  18 18
+            80   40  18 18
+
+            40   65  18 18
+            60   65  18 18
+
+            120  0   18 18
+            140  0   18 18
+            160  0   18 18
+            180  0   18 18
+            200  0   18 18
+
+            120  20  18 18
+            140  20  18 18
+            160  20  18 18
+            180  20  18 18
+            200  20  18 18
+
+            120  40  18 18
+            140  40  18 18
+            160  40  18 18
+            180  40  18 18
+            200  40  18 18
+
+            140  65  18 18
+            160  65  18 18
         >;
     };
 };
