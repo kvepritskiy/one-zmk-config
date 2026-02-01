@@ -13,6 +13,7 @@
 
     ergonaut_physical_layout: physical_layout {
         compatible = "zmk,physical-layout";
+        display-name = "Ergonaut";
 
         keys = <
             0    0   18 18
