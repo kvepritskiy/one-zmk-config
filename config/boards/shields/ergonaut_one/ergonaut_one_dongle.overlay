@@ -5,6 +5,7 @@
  */
 
 #include "ergonaut_one_nice.dtsi"
+#include <dt-bindings/zmk/physical-layout.h>
 
 / {
     chosen {
