@@ -10,12 +10,13 @@
     chosen {
         zmk,physical-layout = &ergonaut_physical_layout;
     };
+
     kscan_dummy: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         status = "disabled";
     };
 
-       ergonaut_transform: transform {
+    ergonaut_transform: transform {
         compatible = "zmk,physical-layout-transform";
         map = <
             0  1  2  3  4  5
@@ -32,7 +33,7 @@
 
     ergonaut_physical_layout: physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "ErgonautOne";
+        display-name = "Ergonaut 3x6+3";
 
         kscan = <&kscan_dummy>;
         transform = <&ergonaut_transform>;
