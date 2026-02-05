@@ -21,6 +21,57 @@
         diode-direction = "col2row";
     };
 
+ 	kp0: key_position { x = <0>;   y = <0>;   w = <18>; h = <18>; };
+    kp1: key_position { x = <20>;  y = <0>;   w = <18>; h = <18>; };
+    kp2: key_position { x = <40>;  y = <0>;   w = <18>; h = <18>; };
+    kp3: key_position { x = <60>;  y = <0>;   w = <18>; h = <18>; };
+    kp4: key_position { x = <80>;  y = <0>;   w = <18>; h = <18>; };
+    kp5: key_position { x = <100>; y = <0>;   w = <18>; h = <18>; };
+
+    kp6: key_position { x = <0>;   y = <20>;  w = <18>; h = <18>; };
+    kp7: key_position { x = <20>;  y = <20>;  w = <18>; h = <18>; };
+    kp8: key_position { x = <40>;  y = <20>;  w = <18>; h = <18>; };
+    kp9: key_position { x = <60>;  y = <20>;  w = <18>; h = <18>; };
+    kp10: key_position { x = <80>; y = <20>;  w = <18>; h = <18>; };
+    kp11: key_position { x = <100>;y = <20>;  w = <18>; h = <18>; };
+
+    kp12: key_position { x = <0>;   y = <40>;  w = <18>; h = <18>; };
+    kp13: key_position { x = <20>;  y = <40>;  w = <18>; h = <18>; };
+    kp14: key_position { x = <40>;  y = <40>;  w = <18>; h = <18>; };
+    kp15: key_position { x = <60>;  y = <40>;  w = <18>; h = <18>; };
+    kp16: key_position { x = <80>;  y = <40>;  w = <18>; h = <18>; };
+    kp17: key_position { x = <100>; y = <40>;  w = <18>; h = <18>; };
+
+    kp18: key_position { x = <40>;  y = <65>;  w = <18>; h = <18>; };
+    kp19: key_position { x = <60>;  y = <65>;  w = <18>; h = <18>; };
+    kp20: key_position { x = <80>;  y = <65>;  w = <18>; h = <18>; };
+
+    kp21: key_position { x = <140>; y = <0>;   w = <18>; h = <18>; };
+    kp22: key_position { x = <160>; y = <0>;   w = <18>; h = <18>; };
+    kp23: key_position { x = <180>; y = <0>;   w = <18>; h = <18>; };
+    kp24: key_position { x = <200>; y = <0>;   w = <18>; h = <18>; };
+    kp25: key_position { x = <220>; y = <0>;   w = <18>; h = <18>; };
+    kp26: key_position { x = <240>; y = <0>;   w = <18>; h = <18>; };
+
+    kp27: key_position { x = <140>; y = <20>;  w = <18>; h = <18>; };
+    kp28: key_position { x = <160>; y = <20>;  w = <18>; h = <18>; };
+    kp29: key_position { x = <180>; y = <20>;  w = <18>; h = <18>; };
+    kp30: key_position { x = <200>; y = <20>;  w = <18>; h = <18>; };
+    kp31: key_position { x = <220>; y = <20>;  w = <18>; h = <18>; };
+    kp32: key_position { x = <240>; y = <20>;  w = <18>; h = <18>; };
+
+    kp33: key_position { x = <140>; y = <40>;  w = <18>; h = <18>; };
+    kp34: key_position { x = <160>; y = <40>;  w = <18>; h = <18>; };
+    kp35: key_position { x = <180>; y = <40>;  w = <18>; h = <18>; };
+    kp36: key_position { x = <200>; y = <40>;  w = <18>; h = <18>; };
+    kp37: key_position { x = <220>; y = <40>;  w = <18>; h = <18>; };
+    kp38: key_position { x = <240>; y = <40>;  w = <18>; h = <18>; };
+
+    kp39: key_position { x = <180>; y = <65>;  w = <18>; h = <18>; };
+    kp40: key_position { x = <200>; y = <65>;  w = <18>; h = <18>; };
+    kp41: key_position { x = <220>; y = <65>;  w = <18>; h = <18>; };
+
+
      default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
