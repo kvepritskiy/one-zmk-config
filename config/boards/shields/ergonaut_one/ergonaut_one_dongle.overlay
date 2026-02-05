@@ -17,9 +17,16 @@
 	kscan0: kscan_0 {
 		compatible = "zmk,kscan-gpio-matrix";
 		label = "KSCAN";
-		wakeup-source;		
-        diode-direction = "col2row";
-    };
+		wakeup-source;
+
+		diode-direction = "col2row";
+		row-gpios
+			= <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&xiao_d  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&xiao_d  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&xiao_d  7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			;
+	};
 
  	kp0: keypos@0  { compatible = "zmk,key-position"; x = <0>;   y = <0>;   w = <18>; h = <18>; };
     kp1: keypos@1  { compatible = "zmk,key-position"; x = <20>;  y = <0>;   w = <18>; h = <18>; };
