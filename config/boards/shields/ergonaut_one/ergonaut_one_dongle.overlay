@@ -15,7 +15,7 @@
     };
 
 	kscan0: kscan_0 {
-		    compatible = "zmk,kscan-none";;
+		compatible = "zmk,kscan-none";
 		label = "KSCAN";
 		wakeup-source;
 	};
