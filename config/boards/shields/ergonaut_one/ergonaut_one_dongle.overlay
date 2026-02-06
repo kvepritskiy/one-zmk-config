@@ -5,6 +5,7 @@
  */
 
 #include "ergonaut_one_nice.dtsi"
+#include <layouts/foostan/corne/6column.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
@@ -35,8 +36,7 @@
                                     RC(3,3) RC(3,4) RC(3,5)  RC(3,11) RC(3,10) RC(3,9)
             >;
     };
-    ergonaut_physical_layout: physical_layout {
-        compatible = "zmk,physical-layout";
+    &foostan_corne_6col_layout: 
         display-name = "Ergonaut";
         kscan = <&kscan0>;
         transform = <&default_transform>;
