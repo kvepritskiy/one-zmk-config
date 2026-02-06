@@ -13,8 +13,10 @@
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
     };
-
-	    kp0: keypos@0 {
+	kscan_0: kscan {
+        compatible = "zmk,kscan-none";
+    };
+	kp0: keypos@0 {
         compatible = "zmk,key-position-v2";
         #key-cells = <1>;
         key-position = <0 0>;
@@ -253,7 +255,6 @@
     ergonaut_physical_layout: physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Ergonaut";
-
         kscan = <&kscan0>;
         transform = <&default_transform>;
 
