@@ -37,7 +37,7 @@
             >;
     };
 };
-    &foostan_corne_6col_layout: {
+    &foostan_corne_6col_layout {
         display-name = "Ergonaut";
         kscan = <&kscan0>;
         transform = <&default_transform>;
