@@ -21,7 +21,6 @@
         compatible = "zmk,physical-layout";
         display-name = "Ergonaut";
         kscan = <&kscan0>;
-        transform = <&default_transform>;
     };
 };
 
