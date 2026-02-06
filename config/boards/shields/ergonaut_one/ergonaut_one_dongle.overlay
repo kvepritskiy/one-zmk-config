@@ -10,7 +10,7 @@
 
 / {
     chosen {
-        zmk,physical-layout = &ergonaut_physical_layout;        
+        zmk,physical-layout = &foostan_corne_6col_layout;        
     };
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
@@ -36,7 +36,7 @@
                                     RC(3,3) RC(3,4) RC(3,5)  RC(3,11) RC(3,10) RC(3,9)
             >;
     };
-    &foostan_corne_6col_layout: 
+    &foostan_corne_6col_layout: {
         display-name = "Ergonaut";
         kscan = <&kscan0>;
         transform = <&default_transform>;
