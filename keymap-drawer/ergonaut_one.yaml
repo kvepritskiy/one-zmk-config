@@ -14,16 +14,16 @@ layers:
   - P
   - '['
   - Alt
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LEFT WIN}
+  - {t: S, h: LEFT SHIFT}
+  - {t: D, h: LEFT ALT}
+  - {t: F, h: Ctrl}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: Ctrl}
+  - {t: K, h: RIGHT ALT}
+  - {t: RIGHT SHIFT, h: L}
+  - {t: ;, h: LEFT GUI}
   - ''''
   - Ctrl
   - Z
@@ -258,49 +258,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  gaming:
-  - ESCAPE
-  - R
-  - Q
-  - W
-  - E
-  - F
-  - {t: default, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - I
-  - A
-  - S
-  - D
-  - G
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - X
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - C
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ␣
-  - ENTER
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   '7':
   - F1
   - F2
@@ -344,53 +301,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '8':
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '!'
-  - {t: '@', h: '&ru_at'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
 combos:
 - p: [18, 7, 8]
   k: {t: mouse, h: toggle}
 - p: [17, 4, 3]
   k: {t: mouse, h: toggle}
 - p: [0, 13, 26]
-  k: {t: gaming, h: toggle}
+  k: {t: default, h: toggle}

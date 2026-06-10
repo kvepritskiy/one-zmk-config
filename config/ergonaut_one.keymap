@@ -100,7 +100,7 @@
         };
 
         gaming {
-            bindings = <&tog 6>;
+            bindings = <&tog 0>;
             key-positions = <0 13 26>;
         };
     };
@@ -162,10 +162,10 @@
 
         default_layer {
             bindings = <
-&mt GRAVE ESCAPE  &kp Q  &kp W  &kp E           &kp R            &kp T      &kp Y      &kp U                   &kp I      &kp O    &kp P     &kp LBKT
-&kp LALT          &kp A  &kp S  &kp D           &kp F            &kp G      &kp H      &kp J                   &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LCTRL         &kp Z  &kp X  &kp C           &kp V            &kp B      &kp N      &kp M                   &kp COMMA  &kp DOT  &kp FSLH  &mt RALT BSLH
-                                &lt 1 LEFT_WIN  &mt LSHFT SPACE  &lt 2 RET  &lt 2 TAB  &mt LEFT_ALT BACKSPACE  &lt 1 DEL
+&mt GRAVE ESCAPE  &kp Q           &kp W             &kp E           &kp R            &kp T      &kp Y      &kp U                   &kp I            &kp O              &kp P              &kp LBKT
+&kp LALT          &mt LEFT_WIN A  &mt LEFT_SHIFT S  &mt LEFT_ALT D  &mt LCTRL F      &kp G      &kp H      &mt RCTRL J             &mt RIGHT_ALT K  &mt L RIGHT_SHIFT  &mt LEFT_GUI SEMI  &kp SINGLE_QUOTE
+&kp LCTRL         &kp Z           &kp X             &kp C           &kp V            &kp B      &kp N      &kp M                   &kp COMMA        &kp DOT            &kp FSLH           &mt RALT BSLH
+                                                    &lt 1 LEFT_WIN  &mt LSHFT SPACE  &lt 2 RET  &lt 2 TAB  &mt LEFT_ALT BACKSPACE  &lt 1 DEL
             >;
         };
 
@@ -214,30 +214,12 @@
             >;
         };
 
-        gaming {
-            bindings = <
-&kp ESCAPE  &kp R  &kp Q   &kp W   &kp E      &kp F      &to 0   &trans  &trans  &trans  &trans  &trans
-&trans      &kp I  &kp A   &kp S   &kp D      &kp G      &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp X  &trans  &trans  &trans     &kp C      &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &kp SPACE  &kp ENTER  &trans  &trans  &trans
-            >;
-        };
-
         layer_7 {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
                         &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&trans  &kp N1           &kp N2             &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&trans  &kp EXCLAMATION  &ru_at_or_qu 0 AT  &none   &none   &none   &none   &none   &trans  &trans  &trans  &trans
-&trans  &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                            &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
