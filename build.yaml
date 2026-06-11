@@ -1,16 +1,16 @@
 include:
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: ergonaut_one_left
     cmake-args: -DCONFIG_ZMK_POINTING=y
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: ergonaut_one_right
     cmake-args: -DCONFIG_ZMK_POINTING=y
-  - board: nice_nano
+  - board: nice_nano@1//zmk
     shield: ergonaut_one_dongle dongle_display
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_POINTING=y -DCONFIG_ZMK_STUDIO=y
     artifact-name: ergonaut_one_dongle
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
   - board: nice_nano
     shield: settings_reset
