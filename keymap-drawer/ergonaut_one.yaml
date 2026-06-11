@@ -306,5 +306,3 @@ combos:
   k: {t: mouse, h: toggle}
 - p: [17, 4, 3]
   k: {t: mouse, h: toggle}
-- p: [0, 13, 26]
-  k: {t: default, h: toggle}

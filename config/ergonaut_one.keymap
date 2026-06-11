@@ -30,6 +30,7 @@
 &mt {
     quick-tap-ms = <200>;
     tapping-term-ms = <200>;
+    flavor = "tap-preferred";
 };
 
 / {
@@ -97,11 +98,6 @@
         mouse2 {
             bindings = <&tog 4>;
             key-positions = <17 4 3>;
-        };
-
-        gaming {
-            bindings = <&tog 0>;
-            key-positions = <0 13 26>;
         };
     };
 
