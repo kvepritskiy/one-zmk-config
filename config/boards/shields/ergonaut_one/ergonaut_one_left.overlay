@@ -2,15 +2,30 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/matrix_transform.h>
 #include "ergonaut_one.dtsi"
 
-&kscan0 {
-    /* Прямое указание пинов без pinctrl */
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
+    };
+};
+
+/* Полное определение kscan0 */
+kscan0: kscan0 {
+    compatible = "zmk,kscan-gpio-matrix";
+    label = "KSCAN0";
+    
+    /* Диоды направлены от строк к столбцам (ROW2COL) */
+    diode-direction = "row2col";
+    
+    /* 4 строки, 6 столбцов */
     row-gpios
-        = <&gpio0 1 GPIO_ACTIVE_HIGH>   // Row 0
-        , <&gpio0 2 GPIO_ACTIVE_HIGH>   // Row 1
-        , <&gpio0 3 GPIO_ACTIVE_HIGH>   // Row 2
-        , <&gpio0 4 GPIO_ACTIVE_HIGH>   // Row 3
+        = <&gpio0 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // Row 0
+        , <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // Row 1
+        , <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // Row 2
+        , <&gpio0 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // Row 3 (большие пальцы)
         ;
         
     col-gpios
