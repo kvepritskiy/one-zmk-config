@@ -1,54 +1,24 @@
 /*
- * Copyright (c) 2025
  * SPDX-License-Identifier: MIT
  */
 
-#include <dt-bindings/zmk/matrix_transform.h>
 #include "ergonaut_one.dtsi"
 
-/ {
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
-    };
-
-    default_transform: keymap_transform0 {
-        compatible = "zmk,matrix-transform";
-        columns = <6>;    /* Укажите количество столбцов */
-        rows = <4>;       /* Укажите количество строк */
-        map = <
-            /* Заполните матрицу согласно физической раскладке */
-            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5)
-            RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5)
-            RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)
-            RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)
-        >;
-    };
-};
-
-&pinctrl {
-    /* Настройка пинов для матрицы (пример для Seeed Xiao BLE) */
-    kscan0_default: kscan0_default {
-        group1 {
-            psels = <NRF_PSEL(GPIO, 0, 0)>,  /* row0 */
-                    <NRF_PSEL(GPIO, 0, 1)>,  /* row1 */
-                    <NRF_PSEL(GPIO, 0, 2)>,  /* row2 */
-                    <NRF_PSEL(GPIO, 0, 3)>;  /* row3 */
-            bias-pull-up;
-        };
-        group2 {
-            psels = <NRF_PSEL(GPIO, 0, 4)>,  /* col0 */
-                    <NRF_PSEL(GPIO, 0, 5)>,  /* col1 */
-                    <NRF_PSEL(GPIO, 0, 6)>,  /* col2 */
-                    <NRF_PSEL(GPIO, 0, 7)>,  /* col3 */
-                    <NRF_PSEL(GPIO, 1, 0)>,  /* col4 */
-                    <NRF_PSEL(GPIO, 1, 1)>;  /* col5 */
-            bias-pull-up;
-        };
-    };
-};
-
 &kscan0 {
-    pinctrl-0 = <&kscan0_default>;
-    pinctrl-names = "default";
+    /* Прямое указание пинов без pinctrl */
+    row-gpios
+        = <&gpio0 1 GPIO_ACTIVE_HIGH>   // Row 0
+        , <&gpio0 2 GPIO_ACTIVE_HIGH>   // Row 1
+        , <&gpio0 3 GPIO_ACTIVE_HIGH>   // Row 2
+        , <&gpio0 4 GPIO_ACTIVE_HIGH>   // Row 3
+        ;
+        
+    col-gpios
+        = <&gpio0 5 GPIO_ACTIVE_HIGH>   // Col 0
+        , <&gpio0 6 GPIO_ACTIVE_HIGH>   // Col 1
+        , <&gpio0 7 GPIO_ACTIVE_HIGH>   // Col 2
+        , <&gpio1 0 GPIO_ACTIVE_HIGH>   // Col 3
+        , <&gpio1 1 GPIO_ACTIVE_HIGH>   // Col 4
+        , <&gpio1 2 GPIO_ACTIVE_HIGH>   // Col 5
+        ;
 };
