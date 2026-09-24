@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - Alt
+  - {t: mouse, h: toggle}
   - {t: A, h: LEFT WIN}
   - {t: S, h: LEFT SHIFT}
   - {t: D, h: LEFT ALT}
@@ -48,7 +48,7 @@ layers:
   - {t: PAGE UP, h: Home}
   - UP ARROW
   - {t: PAGE DOWN, h: End}
-  - Insert
+  - KP NUMLOCK
   - '0'
   - '1'
   - '2'
@@ -60,7 +60,7 @@ layers:
   - ←
   - DOWN ARROW
   - →
-  - ''
+  - CAPSLOCK
   - ''
   - '4'
   - '5'
@@ -72,7 +72,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Insert
   - ''
   - '7'
   - '8'
