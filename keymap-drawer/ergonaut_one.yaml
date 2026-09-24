@@ -49,13 +49,13 @@ layers:
   - UP ARROW
   - {t: PAGE DOWN, h: End}
   - KP NUMLOCK
-  - Gui+0
+  - '0'
   - '1'
   - '2'
   - '3'
-  - KP NUMLOCK
   - +
   - '-'
+  - '='
   - {t: ▽, type: trans}
   - ←
   - DOWN ARROW
@@ -65,9 +65,9 @@ layers:
   - '4'
   - '5'
   - '6'
-  - '='
   - '*'
-  - /
+  - KP DIVIDE
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
   - ''
