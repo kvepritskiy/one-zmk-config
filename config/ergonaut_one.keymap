@@ -167,10 +167,10 @@
 
         raise_layer {
             bindings = <
-&kp LGUI  &mt HOME PAGE_UP  &kp UP_ARROW    &mt END PAGE_DOWN  &kp KP_NUMLOCK  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_NUMLOCK  &kp PLUS      &kp MINUS
-&trans    &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &kp CAPSLOCK    &none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL       &kp ASTERISK  &kp SLASH
-&trans    &none             &none           &none              &kp INS         &none   &kp N7        &kp N8        &kp N9        &kp KP_DOT      &none         &kp RALT
-                                            &trans             &trans          &trans  &trans        &trans        &trans
+&kp LGUI  &mt HOME PAGE_UP  &kp UP_ARROW    &mt END PAGE_DOWN  &kp KP_NUMLOCK  &kp LG(NUMBER_0)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_NUMLOCK  &kp PLUS      &kp MINUS
+&trans    &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &kp CAPSLOCK    &none             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL       &kp ASTERISK  &kp SLASH
+&trans    &none             &none           &none              &kp INS         &none             &kp N7        &kp N8        &kp N9        &kp KP_DOT      &none         &kp RALT
+                                            &trans             &trans          &trans            &trans        &trans        &trans
             >;
         };
 

@@ -49,7 +49,7 @@ layers:
   - UP ARROW
   - {t: PAGE DOWN, h: End}
   - KP NUMLOCK
-  - '0'
+  - Gui+0
   - '1'
   - '2'
   - '3'
