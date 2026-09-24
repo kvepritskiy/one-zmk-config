@@ -168,8 +168,8 @@
         raise_layer {
             bindings = <
 &kp LGUI  &mt HOME PAGE_UP  &kp UP_ARROW    &mt END PAGE_DOWN  &kp KP_NUMLOCK  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS      &kp MINUS      &kp EQUAL
-&trans    &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &kp CAPSLOCK    &none         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp KP_DIVIDE  &trans
-&trans    &none             &none           &none              &kp INS         &none         &kp N7        &kp N8        &kp N9        &kp KP_DOT    &none          &kp RALT
+&trans    &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &kp CAPSLOCK    &kp KP_COMMA  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp KP_DIVIDE  &trans
+&trans    &none             &none           &none              &kp INS         &kp KP_DOT    &kp N7        &kp N8        &kp N9        &kp KP_DOT    &none          &kp RALT
                                             &trans             &trans          &trans        &trans        &trans        &trans
             >;
         };

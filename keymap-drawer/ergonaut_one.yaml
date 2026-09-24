@@ -61,7 +61,7 @@ layers:
   - DOWN ARROW
   - →
   - CAPSLOCK
-  - ''
+  - KP COMMA
   - '4'
   - '5'
   - '6'
@@ -73,7 +73,7 @@ layers:
   - ''
   - ''
   - Insert
-  - ''
+  - KP DOT
   - '7'
   - '8'
   - '9'
